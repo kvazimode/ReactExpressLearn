@@ -1,6 +1,9 @@
 # ReactExpressLearn
 Tasks completed while learning React Express guide (www.react.express).
 
+29.06.2017 22:50
+ - использование компонентов
+
 27.06.2017 13:00
  - добавлено первое react приложение
 
