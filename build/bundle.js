@@ -10417,12 +10417,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var styles = {
     app: {
         paddingTop: 40,
-        textAlign: 'center'
+        textAlign: 'center',
+        width: 400,
+        height: 80,
+        backgroundColor: "lightblue"
+    },
+    item: {
+        color: 'red'
     }
 };
 
-var App = function (_Component) {
-    __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default.a(App, _Component);
+var MenuItem = function (_Component) {
+    __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default.a(MenuItem, _Component);
+
+    function MenuItem() {
+        __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, MenuItem);
+
+        return __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (MenuItem.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(MenuItem)).apply(this, arguments));
+    }
+
+    __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default.a(MenuItem, [{
+        key: 'render',
+        value: function render() {
+            var text = this.props.text;
+
+            return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+                'div',
+                { style: styles.item },
+                text
+            );
+        }
+    }]);
+
+    return MenuItem;
+}(__WEBPACK_IMPORTED_MODULE_5_react__["Component"]);
+
+var App = function (_Component2) {
+    __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default.a(App, _Component2);
 
     function App() {
         __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, App);
@@ -10436,7 +10467,8 @@ var App = function (_Component) {
             return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                 'div',
                 { style: styles.app },
-                'Dorou'
+                __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(MenuItem, { text: 'Dorou' }),
+                __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(MenuItem, { text: 'lol' })
             );
         }
     }]);
